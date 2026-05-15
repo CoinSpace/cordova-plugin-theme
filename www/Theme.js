@@ -1,7 +1,7 @@
 var exec = require('cordova/exec');
 
 /**
- * Switch iOS overrideUserInterfaceStyle.
+ * Switch between light, dark, and system appearance on iOS and Android.
  *
  * @namespace cordova.plugins.Theme
  */

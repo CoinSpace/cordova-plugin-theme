@@ -3,13 +3,14 @@
   xmlns="http://apache.org/cordova/ns/plugins/1.0">
 
   <name>Theme</name>
-  <description>Switch overrideUserInterfaceStyle between light, dark, and system on iOS.</description>
+  <description>Switch between light, dark, and system appearance on iOS and Android.</description>
   <license>MIT</license>
-  <keywords>cordova,theme,dark-mode,light-mode,interface-style,ios</keywords>
+  <keywords>cordova,theme,dark-mode,light-mode,interface-style,ios,android</keywords>
 
   <engines>
     <engine name="cordova" version=">=6.0.0"/>
     <engine name="cordova-ios" version=">=6.0.0" />
+    <engine name="cordova-android" version=">=9.0.0" />
   </engines>
 
   <js-module src="www/Theme.js" name="Theme">
@@ -24,6 +25,19 @@
     </config-file>
 
     <source-file src="src/ios/Theme.swift" />
+  </platform>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Theme">
+        <param name="android-package" value="com.coinspace.plugin.theme.Theme" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Theme.java"
+                 target-dir="src/com/coinspace/plugin/theme" />
+
+    <framework src="androidx.appcompat:appcompat:1.7.0" />
   </platform>
 
 </plugin>
