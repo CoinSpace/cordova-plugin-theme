@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-theme",
+  "version": "1.0.0",
+  "description": "Cordova plugin to switch overrideUserInterfaceStyle between light, dark, and auto on iOS.",
+  "main": "www/Theme.js",
+  "keywords": [
+    "cordova",
+    "cordova-plugin",
+    "theme",
+    "dark-mode",
+    "light-mode",
+    "ios",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova-ios": ">=6.0.0"
+      }
+    }
+  },
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-theme",
+    "platforms": [
+      "ios"
+    ]
+  }
+}

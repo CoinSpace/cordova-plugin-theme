@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-theme" version="1.0.0"
+  xmlns="http://apache.org/cordova/ns/plugins/1.0">
+
+  <name>Theme</name>
+  <description>Switch overrideUserInterfaceStyle between light, dark, and auto on iOS.</description>
+  <license>MIT</license>
+  <keywords>cordova,theme,dark-mode,light-mode,interface-style,ios</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=6.0.0"/>
+    <engine name="cordova-ios" version=">=6.0.0" />
+  </engines>
+
+  <js-module src="www/Theme.js" name="Theme">
+    <clobbers target="cordova.plugins.Theme" />
+  </js-module>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Theme">
+        <param name="ios-package" value="Theme" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/ios/Theme.swift" />
+  </platform>
+
+</plugin>
