@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-theme",
   "version": "1.0.0",
-  "description": "Cordova plugin to switch overrideUserInterfaceStyle between light, dark, and auto on iOS.",
+  "description": "Cordova plugin to switch overrideUserInterfaceStyle between light, dark, and system on iOS.",
   "main": "www/Theme.js",
   "keywords": [
     "cordova",

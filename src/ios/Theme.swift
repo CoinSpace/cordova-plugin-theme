@@ -41,7 +41,7 @@ class Theme: CDVPlugin {
   @objc(getStyle:)
   func getStyle(_ command: CDVInvokedUrlCommand) {
     guard #available(iOS 13, *) else {
-      let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "auto")
+      let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "system")
       commandDelegate.send(result, callbackId: command.callbackId)
       return
     }
@@ -54,7 +54,7 @@ class Theme: CDVPlugin {
       case .dark:
         style = "dark"
       default:
-        style = "auto"
+        style = "system"
       }
       let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: style)
       self?.commandDelegate.send(result, callbackId: command.callbackId)

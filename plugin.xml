@@ -3,7 +3,7 @@
   xmlns="http://apache.org/cordova/ns/plugins/1.0">
 
   <name>Theme</name>
-  <description>Switch overrideUserInterfaceStyle between light, dark, and auto on iOS.</description>
+  <description>Switch overrideUserInterfaceStyle between light, dark, and system on iOS.</description>
   <license>MIT</license>
   <keywords>cordova,theme,dark-mode,light-mode,interface-style,ios</keywords>
 

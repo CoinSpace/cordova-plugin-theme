@@ -10,7 +10,7 @@ var Theme = {
   /**
    * Set the UI style.
    *
-   * @param {string} style - 'light', 'dark', or 'auto'
+   * @param {string} style - 'light', 'dark', or 'system'
    * @param {Function} [success]
    * @param {Function} [error]
    */
@@ -21,7 +21,7 @@ var Theme = {
   /**
    * Get the current UI style override.
    *
-   * @param {Function} success - called with 'light', 'dark', or 'auto'
+   * @param {Function} success - called with 'light', 'dark', or 'system'
    * @param {Function} [error]
    */
   getStyle: function(success, error) {
